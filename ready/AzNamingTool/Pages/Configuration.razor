@@ -2542,7 +2542,7 @@
                             }
                             break;
                         case "edit":
-                            ShowEditModal((int)id, "ResourceProjAppSvc", "Edit Project/App/Service", "<p>Edit the Project/App/Service.</p><p><strong>NOTES</strong></p><ul><li>Short Name value will be converted to lower case.</li><li>Short Name must be 1-3 characters.</li></ul>");
+                            ShowEditModal((int)id, "ResourceProjAppSvc", "Edit Project/App/Service", "<p>Edit the Project/App/Service.</p><p><strong>NOTES</strong></p><ul><li>Short Name value will be converted to lower case.</li><li>Short Name must be 1-10 characters.</li></ul>");
                             break;
                         case "delete":
                             confirm = await JsRuntime.InvokeAsync<bool>("confirm", "Are you sure?");
@@ -2564,7 +2564,7 @@
                             }
                             break;
                         case "add":
-                            ShowAddModal((int)id, "ResourceProjAppSvc", "Add Project/App/Service", "<p>Add an Project/App/Service.</p><p><strong>NOTES</strong></p><ul><li>Short Name value will be converted to lower case.</li><li>Short Name must be 1-3 characters.</li></ul>");
+                            ShowAddModal((int)id, "ResourceProjAppSvc", "Add Project/App/Service", "<p>Add an Project/App/Service.</p><p><strong>NOTES</strong></p><ul><li>Short Name value will be converted to lower case.</li><li>Short Name must be 1-10 characters.</li></ul>");
                             break;
                         case "download":
                             serviceResponse = await ResourceProjAppSvcService.GetItems();
