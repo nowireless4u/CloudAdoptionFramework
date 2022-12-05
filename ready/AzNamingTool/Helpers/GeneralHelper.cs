@@ -396,7 +396,7 @@ namespace AzureNamingTool.Helpers
                     }
                     break;
                 case "ResourceProjAppSvc":
-                    if (value.Length < 4)
+                    if (value.Length < 11)
                     {
                         valid = true;
                     }
